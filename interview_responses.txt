@@ -1,9 +1,30 @@
 You can write your responses here!
 
-1.
+1. Minimum two times to pick a fruit from a bucket
 
-2.
+2. 
+
+def rev_word(word):
+    word2 = ""
+    for letter in word:
+        word2 = letter + word2
+    return word2
+
+word = "hello"
+print rev_word(word)
 
 3.
 
-4.
+array = [1, 2, [ 3, 4, [5]], [6, 7], 8, 9, [10]]
+
+def summation(array):
+    total = 0
+    for value in array:
+        if type(value) not in [list, tuple]: 
+            total = total + value
+        else:
+            total = total + summation(value)
+    return total
+
+print summation(array)
+
